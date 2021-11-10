@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express();
-const port = process.env.PORT;
+const port = process.argv[1];
 
 app.use((req, res) => {
   console.log(`${req.method} ${req.url}`);
